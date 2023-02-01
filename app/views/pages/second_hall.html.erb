@@ -1,13 +1,12 @@
-<div>
-Living Room Arrow Left
-Living Room Text
-</div>
-
-<div>
-Turn Around Arrow
-</div>
-
-<div>
-Bathroom Arrow Right
-Bathroom Text
+<div class="nav_wrapper">
+    <%= image_tag "second_hallway.png", class: "wide_image" %>
+        <%= link_to pages_living_room_path do %>
+            <%= image_tag "living_room_left.png", class: "left_link_image" %>
+        <% end %>
+        <%= link_to pages_second_hall_reverse_path do %>
+            <%= image_tag "reverse_arrow.png", class: "center_link_image" %>
+        <% end %>
+        <%= link_to pages_bathroom_path do %>
+            <%= image_tag "bathroom_right.png", class: "right_link_image" %>
+        <% end %>        
 </div>

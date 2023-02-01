@@ -1,26 +1,7 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-
  body {
-    max-width: 100%;
+    margin: 0;
+    width: 100%;
     background-color: #29637D;
-    min-height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .button {
     display: flex;
@@ -38,10 +19,52 @@
     size: 1em;
 }
 
-.wide_wrapper {
-    max-width: 100%;
+.nav_wrapper {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+}
+
+.nav_links_wrapper {
+    display: flex;
+    position: absolute;
+    bottom: 10vh;
+}
+.wide_image {
+    position: relative;
+    object-fit: contain;
+    width: 100vmax;
 }
 
 .link_wrapper {
-    max-width: 100%;
+    position: absolute;
+    display: display-inside;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    max-width: 90vw;
+    max-height: 200px;
+}
+
+.left_link_image {
+    position: absolute;
+    left: 20vw;
+    top: 90vh; 
+}
+
+.center_link_image {
+    position: absolute;
+    left: 46vw;
+    top: 90vh;
+}
+
+.right_link_image {
+    position: absolute;
+    right: 20vw;
+    top: 90vh;
+}
+
+#enter_link {
+    position: absolute;
+    top: 80vh;
+    left: 46vw;
 }

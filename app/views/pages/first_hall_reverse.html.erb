@@ -1,13 +1,12 @@
-<div>
-Kitchen Arrow Left
-Kitchen Text
-</div>
-
-<div>
-Turn Around Arrow
-</div>
-
-<div>
-Bedroom Arrow Right
-Bedroom Text
+<div class="nav_wrapper">
+    <%= image_tag "first_hallway_reverse.png", class: "wide_image" %>
+        <%= link_to pages_kitchen_path do %>
+            <%= image_tag "kitchen_left.png", class: "left_link_image" %>
+        <% end %>
+        <%= link_to pages_second_hall_path do %>
+            <%= image_tag "reverse_arrow.png", class: "center_link_image" %>
+        <% end %>
+        <%= link_to pages_bedroom_path do %>
+            <%= image_tag "bedroom_right.png", class: "right_link_image" %>
+        <% end %>        
 </div>
