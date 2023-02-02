@@ -1,6 +1,6 @@
-<div class="nav_wrapper">
-    <%= image_tag("entrance.png", class: "wide_image") %>
+<%= image_tag("entrance.png", id: "entrance_bg") %>
+<div id="entrance_link">
     <%= link_to pages_first_hall_path do %>
-    <%= image_tag("enter_arrow.png", id: "enter_link") %>
+    <%= image_tag("enter_arrow.png", class: "center_link")%>
     <% end %>
 </div>

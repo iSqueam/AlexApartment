@@ -1,12 +1,12 @@
-<div class="nav_wrapper">
-    <%= image_tag "second_hallway_reverse.png", class: "wide_image" %>
-        <%= link_to pages_bathroom_path do %>
-            <%= image_tag "bathroom_left.png", class: "left_link_image" %>
-        <% end %>
-        <%= link_to pages_first_hall_reverse_path do %>
-            <%= image_tag "forward_arrow.png", class: "center_link_image" %>
-        <% end %>
-        <%= link_to pages_living_room_path do %>
-            <%= image_tag "living_room_right.png", class: "right_link_image" %>
-        <% end %>        
+<%= image_tag("second_hallway_reverse.png", id: "second_hall_reverse_bg") %>
+<div class="link_overlay">
+    <%= link_to pages_bathroom_path do %>
+        <%= image_tag "bathroom_left.png", class: "left_link" %>
+    <% end %>
+    <%= link_to pages_first_hall_reverse_path do %>
+        <%= image_tag "forward_arrow.png", class: "center_link" %>
+    <% end %>
+    <%= link_to pages_living_room_path do %>
+        <%= image_tag "living_room_right.png", class: "right_link" %>
+    <% end %>        
 </div>

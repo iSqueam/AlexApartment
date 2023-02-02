@@ -1,12 +1,12 @@
-<div class="nav_wrapper">
-    <%= image_tag "first_hallway.png", class: "wide_image" %>
-        <%= link_to pages_bedroom_path do %>
-            <%= image_tag "bedroom_left.png", class: "left_link_image" %>
-        <% end %>
-        <%= link_to pages_second_hall_path do %>
-            <%= image_tag "forward_arrow.png", class: "center_link_image" %>
-        <% end %>
-        <%= link_to pages_kitchen_path do %>
-            <%= image_tag "kitchen_right.png", class: "right_link_image" %>
-        <% end %>        
+<%= image_tag("first_hallway.png", id: "first_hall_bg") %>
+<div class="link_overlay">
+    <%= link_to pages_bedroom_path do %>
+        <%= image_tag "bedroom_left.png", class: "left_link" %>
+    <% end %>
+    <%= link_to pages_second_hall_path do %>
+        <%= image_tag "forward_arrow.png", class: "center_link" %>
+    <% end %>
+    <%= link_to pages_kitchen_path do %>
+        <%= image_tag "kitchen_right.png", class: "right_link" %>
+    <% end %>        
 </div>
