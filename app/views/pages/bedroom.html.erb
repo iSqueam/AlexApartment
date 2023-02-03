@@ -5,10 +5,10 @@
 
 <div id="bedroom-facts">
     <p>
-        The average American will spend 36 years in ped over the course of their lifetime, according to new research.
+        The average American will spend 36 years in bed over the course of their lifetime, according to new research.
     </p>
     <p>
-        This jaw-dropping new statistic emerged in a new study of 2,000 Americans which aime,d among other things, to reveal just how long we spend lying on our beds.
+        This jaw-dropping new statistic emerged in a new study of 2,000 Americans which aimed, among other things, to reveal just how long we spend lying on our beds.
     </p>
     <p>
         When adding up how long we sleep (seven hours) and how long we're awake just relaxing and watching TV (four hours) every day, the average American was revealed to spend 11 hours a day lying on their bed - that's nearly half of our lifetime.
@@ -18,19 +18,21 @@
     </p>
 </div>
 
-<div>
-    Pillow Image Left
-    Hats Image Right
+<div class="two_image">
+    <%= image_tag"pillows.png" %>
+    <%= image_tag"hats.png" %>
 </div>
 
 <div>
-    Plant and Glass Image
+    <%= image_tag("cup_plant.png", class: "wide_image") %>
 </div>
 
 <div>
-    Belts Image
+    <%= image_tag("belts.png", class: "wide_image") %>
 </div>
 
 <div>
-    Return Link (no arrow)
+    <%= link_to pages_first_hall_path do %>
+        <%= image_tag("return.png", class: "return_link") %>
+    <% end %>
 </div>

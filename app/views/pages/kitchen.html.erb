@@ -1,38 +1,44 @@
-<div>
-Main Kitchen Image with Text
+<div class="top_page_image">
+    <%= image_tag("kitchen.png", class: "wide_image" ) %>
+    <%= image_tag("kitchen_text.png", class: "room_text") %>
+</div>
+<br />
+<div class="two_image">
+    <%= image_tag"toaster.png" %>
+    <%= image_tag"lemon_plate.png" %>
 </div>
 
-<div>
-Toaster Left, Weird Orange Food Thing Right
-</div>
-
-<div>
-    1/2 and 1/2, Cutting Board image Left, poem Right
-    <div>
-        <p> # centered
-            Diswasher running
-
-            Crumbs on a dark wood
-            table
-
-            Mingled with salt grains
-
-            Calvin Olsen
+<div class="two_image">
+    <%= image_tag("cutting_board.png", style: "max-width: 50vw") %>
+    <div id="poem">
+        <p>
+            Diswasher running <br />
+            <br />
+            Crumbs on a dark wood <br />
+            table <br />
+            <br />
+            Mingled with salt grains <br />
+            <br />
+            CALVIN OLSEN
         </p>
     </div>
 </div>
 
-<div>
-    Dirty Spatula Image
+<div class="wide_image">
+    <%= image_tag("spatula.png") %>
+</div>
+
+<div class="two_image">
+    <%= image_tag("dirty_pan.png") %>
+    <%= image_tag("meal.png") %>
+</div>
+
+<div class="wide_image">
+    <%= image_tag("plateware.png") %>
 </div>
 
 <div>
-    Dirty Pan Image left (smaller share of width)
-    Quesadilla Plate right (larger share of width)
+    <%= link_to pages_first_hall_path do %>
+        <%= image_tag("return.png", class: "return_link") %>
+    <% end %>
 </div>
-
-<div>
-    Plateware
-    Return Link
-</div>
-

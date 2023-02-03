@@ -1,28 +1,54 @@
-<div>
-Living Room Main image with Text
+<div class="top_page_image">
+    <%= image_tag("living_room.png", class: "wide_image" ) %>
+    <%= image_tag("living_room_text.png", class: "room_text") %>
 </div>
-# all text in caps and centered in image deficit
-# Spacer of Background color
-<div>
-Succulent image left, text: "GROW" right
+<br />
+<div class="two_image">
+    <%= image_tag("succulent.png", style: "max-width: 67vw") %>
+    <div class="single_word">
+        <p>
+            GROW
+        </p>
+    </div>
 </div>
-# spacer 
-<div>
-"SIP" text left, teacup image right
+<br />
+<div class="two_image">
+    <div class="single_word">
+        <p>
+            SIP
+        </p>
+    </div>
+    <%= image_tag("teacup.png", style: "max-width: 67vw") %>
 </div>
-# spacer
-<div>
-N64 image left, "PLAY" text right
+<br />
+<div class="two_image">
+    <%= image_tag("n64.png", style: "max-width: 67vw") %>
+    <div class="single_word">
+        <p>
+            PLAY
+        </p>
+    </div>
 </div>
-#spacer
-<div>
-"WORK" text left, keyboard image right
+<br />
+<div class="two_image">
+    <div class="single_word">
+        <p>
+            WORK
+        </p>
+    </div>
+    <%= image_tag("keyboard.png", style: "max-width: 67vw") %>
 </div>
-#spacer
-<div>
-books image left, "LEARN" text right
+<br />
+<div class="two_image">
+    <%= image_tag("books.png", style: "max-width: 67vw") %>
+    <div class="single_word">
+        <p>
+            LEARN
+        </p>
+    </div>
 </div>
-#spacer
 <div>
-"RETURN" text and link, no image
+    <%= link_to pages_second_hall_path do %>
+        <%= image_tag("return.png", class: "return_link") %>
+    <% end %>
 </div>

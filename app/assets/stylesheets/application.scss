@@ -1,9 +1,12 @@
+ @import "variables";
+ 
+ 
  body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #29637D;
-    font-family: "Lemon Milk";
+    font-family: "sofia pro";
     color: #D9DFE6;
 }
 
@@ -32,6 +35,7 @@
     position: relative;
     object-fit: contain;
     width: 100vmax;
+    margin: 0 0;
 }
 
 .link_wrapper {
@@ -43,28 +47,22 @@
     max-height: 200px;
 }
 
-.left_link_image {
-    position: absolute;
-    left: 20vw;
-    top: 90vh; 
-}
-
-.center_link_image {
-    position: absolute;
-    left: 46vw;
-    top: 90vh;
-}
-
-.right_link_image {
-    position: absolute;
-    right: 20vw;
-    top: 90vh;
-}
-
 #enter_link {
     position: absolute;
     top: 80vh;
     left: 46vw;
+}
+
+.return_link {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+    width: 303px;
+    height: 80px;
+    
 }
 
 .top_page_image {
@@ -80,25 +78,63 @@
 }
 
 #bedroom_facts {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 80vw;
     margin-left: auto;
     left: 10vw;
     right: 10vw;
+    font-family: "sofia pro";
+    font-size: 2.5em;
 }
 
-.bg_image {
-    position: fixed;
-    height: 100vh;
+.two_image {
+    position: relative;
+    display: flex;
+    flex-direction: row;
     width: 100vw;
-    background-position: center;
-    background-repeat: no-repeat;
+    max-width: 100vw;
     object-fit: contain;
+    justify-content: space-evenly;
+    margin: 0;
 }
+
+#poem {
+    margin: auto;
+    width: 50vw;
+    text-align: center;
+    font-size: 2em;
+}
+
+.single_word {
+    margin: auto;
+    width: 50vw;
+    text-align: center;
+    font-size: 1em;
+}
+
+#bathroom_poem {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-left: 16vw;
+    font-size: 2em;
+}
+
+#plant_facts {
+    text-align: right;
+    font-size: 1em;
+    align-content: center;
+}
+
+/* backgrounds */
+
 #entrance_bg {
     position: fixed;
     height: 100vh;
     width: 100vw;
-    background: url("entrance.png");
+    background: $entrance_bg;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -107,7 +143,7 @@
     position: fixed;
     height: 100vh;
     width: 100vw;
-    background: url("first_hall.png");
+    background: $first_hall_bg;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -116,7 +152,7 @@
     position: fixed;
     height: 100vh;
     width: 100vw;
-    background: url("first_hall_reverse.png");
+    background: $first_hall_reverse_bg;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -125,7 +161,7 @@
     position: fixed;
     height: 100vh;
     width: 100vw;
-    background: url("second_hall.png");
+    background: $second_hall_bg;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -134,7 +170,7 @@
     position: fixed;
     height: 100vh;
     width: 100vw;
-    background: url("second_hall_reverse.png");
+    background: $second_hall_reverse_bg;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -153,6 +189,7 @@
     margin: 0 0;
     padding: 0;
 }
+
 .link_overlay {
     position: relative;
     display: flex;
@@ -192,8 +229,4 @@
 a {
     color: #D9DFE6;
     text-decoration: none;
-}
-
-.center_button {
-    margin-top: 25%;
 }
