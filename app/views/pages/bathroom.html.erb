@@ -4,18 +4,21 @@
 </div>
 <br />
 
-<div id="bathroom_poem", style="margin-left: 16vw, font-size: 2em">
+<div id="bathroom_poem">
+<p>
 MY BATHROOM IS QUITE A SIGHT,<br /><br />
 
 HALF WHITE AND HALF FLORAL DELIGHT,<br /><br />
 
 THE HOLES IN THE WALLS MAY BE A BUMMER,<br /><br />
 
-BUT WITH A BIT OF SPACKLE, THEY'LL BE NO MORE A HUMMER.<br /><br />
+BUT WITH A BIT OF SPACKLE, THEY&apos;LL BE NO MORE A HUMMER.<br /><br />
+</p>
 </div>
 <br />
 <div class="two_image">
     <div id="plant_facts">
+    <p>
         Since plants<br />
         need a lot of<br />
         water, and<br />
@@ -26,8 +29,11 @@ BUT WITH A BIT OF SPACKLE, THEY'LL BE NO MORE A HUMMER.<br /><br />
         actually the<br />
         perfect place<br />
         to house them.<br />
+        </p>
     </div>
-    <%= image_tag("bathroom_plant.png", style: "max-width: 61vw;") %>
+    <div class="right_image">
+        <%= image_tag("bathroom_plant.png", style: "max-width: 61vw;") %>
+    </div>
 </div>
 <br />
 <div class="wide_image">
@@ -81,6 +87,7 @@ BUT WITH A BIT OF SPACKLE, THEY'LL BE NO MORE A HUMMER.<br /><br />
     <%= image_tag("showerhead.png", style: "max-width: 60vw;") %>
 </div>
 <br />
+
 <div>
     <%= link_to pages_second_hall_path do %>
         <%= image_tag("return.png", class: "return_link") %>
