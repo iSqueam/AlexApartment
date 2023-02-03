@@ -31,6 +31,7 @@
     position: absolute;
     bottom: 10vh;
 }
+
 .wide_image {
     position: relative;
     object-fit: contain;
@@ -77,14 +78,36 @@
     left: 38vw;
 }
 
+#bathroom_poem_1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    font-size: 2em;
+    margin: auto;
+}
+
+#bathroom_poem_2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-family: "sofia pro";
+    font-size: 2em;
+    justify-content: end;
+}
+
 #bedroom_facts {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 80vw;
-    margin-left: auto;
-    left: 10vw;
-    right: 10vw;
+    margin: auto;
     font-family: "sofia pro";
     font-size: 2.5em;
 }
@@ -114,21 +137,23 @@
     font-size: 1em;
 }
 
-#bathroom_poem {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    margin-left: 16vw;
-    font-size: 2em;
-}
-
 #plant_facts {
     display: flex;
     text-align: right;
     font-size: 1em;
-    width: 39vw;
+    width: 40vw;
     align-items: center;
     justify-content: center;
+    font-size: 2em;
+}
+
+#showerhead_facts {
+    display: flex;
+    width: 40vw;
+    text-align: right;
+    margin: auto;
+    justify-content: center;
+    font-size: 2em;
 }
 
 /* backgrounds */
